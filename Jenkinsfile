@@ -8,6 +8,12 @@ pipeline {
 
     stages {
         stage('Build') {
+            stage('Build') {
+            agent   {
+            node {
+                label 'Slave_1'
+            }
+        }
             steps {
                 echo 'Building..'
                 sh 'echo "My first pipeline"'
