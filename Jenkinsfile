@@ -8,6 +8,11 @@ pipeline {
 
     stages {
         stage('Build') {
+            agent   {
+            node {
+                label 'Slave_1'
+            }
+        }
          
             steps {
                 echo 'Building..'
