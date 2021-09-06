@@ -8,7 +8,6 @@ pipeline {
 
     stages {
         stage('Build') {
-            stage('Build') {
             agent   {
             node {
                 label 'Slave_1'
