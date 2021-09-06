@@ -19,8 +19,7 @@ pipeline {
                 
                 build job : 'my-first-job',
                     parameters: [[$class: 'StringParameterValue', name: 'FIRST_NAME', value: 'Riya'],
-                                 [$class: 'StringParameterValue', name: 'LAST_NAME', value: 'Chaubey'],
-                                 [$class: 'booleanParam', name: 'SHOW', value: 'true']],
+                                 [$class: 'StringParameterValue', name: 'LAST_NAME', value: 'Chaubey']],
                     wait: true
                                  
                 
